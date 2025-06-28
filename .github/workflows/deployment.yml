@@ -6,6 +6,8 @@ jobs:
         steps:
             - name: Checkout Code
               uses: actions/checkout@v3
+            - name: Install Modules
+              run: yarn  
             - name: Lint Code
               run: eslint --ext .jsx --fix src
     Test-job:
